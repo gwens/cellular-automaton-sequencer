@@ -1,5 +1,5 @@
 {
-  "name": "react-starter",
+  "name": "rxjs-cellular-automaton",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",
@@ -15,7 +15,8 @@
   "dependencies": {
     "express": "^4.16.3",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "rxjs": "^5.5.10"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

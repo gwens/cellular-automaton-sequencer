@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
 class App extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <h1>Hello, React</h1>
+        <h1>Hello, RxJS</h1>
         <img src={require("../images/hello.jpg")} />
       </React.Fragment>
     )
