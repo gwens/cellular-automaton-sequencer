@@ -1,5 +1,5 @@
 {
-  "name": "rxjs-cellular-automaton",
+  "name": "cellular-automaton-sequencer",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.js",

@@ -2,3 +2,17 @@ html {
   font-family: sans-serif;
   color: green;
 }
+
+.filled {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.empty {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}

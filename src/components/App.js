@@ -1,12 +1,10 @@
 import React from 'react'
+import CellularAutomaton from './CellularAutomaton'
 
 class App extends React.Component {
   render() {
     return (
-      <React.Fragment>
-        <h1>Hello, RxJS</h1>
-        <img src={require("../images/hello.jpg")} />
-      </React.Fragment>
+      <CellularAutomaton/>
     )
   }
 }
