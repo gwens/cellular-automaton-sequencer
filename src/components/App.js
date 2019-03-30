@@ -23,7 +23,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <CellularAutomaton trigger$={this.trigger$}/>
+      <CellularAutomaton
+        cellNum={16}
+        cellSize={50}
+        trigger$={this.trigger$}
+        />
     )
   }
 }

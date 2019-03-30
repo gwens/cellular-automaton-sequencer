@@ -3,8 +3,10 @@ import React from 'react'
 class CellularAutomaton extends React.Component {
   constructor(props) {
     super(props)
+    const initArray = new Array(props.cellNum).fill('0')
+    initArray[Math.round(props.cellNum/2)] = '1'
     this.state = {
-      cells: ['0','0','0','0','1','0','0','0','0'],
+      cells: initArray,
     }
     this.createNextGeneration = this.createNextGeneration.bind(this)
   }
@@ -39,7 +41,12 @@ class CellularAutomaton extends React.Component {
     return (
       <React.Fragment>
         {this.state.cells.map((cell, index) => (
-              <div key={index} className={ this.state.cells[parseInt(index)] === '1' ? 'filled' : 'empty'}></div>
+              <div
+                key={index}
+                className={ this.state.cells[parseInt(index)] === '1' ? 'filled' : 'empty'}
+                style={{ height: this.props.cellSize, width: this.props.cellSize }}
+                >
+              </div>
         ))}
       </React.Fragment>
     )
