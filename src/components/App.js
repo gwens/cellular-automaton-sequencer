@@ -26,6 +26,7 @@ class App extends React.Component {
       <CellularAutomaton
         cellNum={16}
         cellSize={50}
+        ruleSet={225}
         trigger$={this.trigger$}
         />
     )
