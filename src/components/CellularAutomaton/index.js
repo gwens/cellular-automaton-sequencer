@@ -6,6 +6,11 @@ class CellularAutomaton extends React.Component {
     this.state = {
       cells: ['0','0','0','0','1','0','0','0','0'],
     }
+    this.createNextGeneration = this.createNextGeneration.bind(this)
+  }
+
+  componentDidMount() {
+    this.props.trigger$.subscribe(this.createNextGeneration)
   }
 
   createNextGeneration() {
@@ -36,7 +41,6 @@ class CellularAutomaton extends React.Component {
         {this.state.cells.map((cell, index) => (
               <div key={index} className={ this.state.cells[parseInt(index)] === '1' ? 'filled' : 'empty'}></div>
         ))}
-        <button onClick={() => this.createNextGeneration()}>Next Generation</button>
       </React.Fragment>
     )
   }
